@@ -2,6 +2,8 @@
 let btn = document.querySelector(".btn")
 let grid = document.querySelector(".grid")
 let square10 = "square-10"
+let square9 = "square-9"
+let square7 = "square-7"
 let square = document.querySelector(".square-10");
 
 // CREAZIONE FUNZIONI
@@ -29,10 +31,26 @@ function gridGenerator(a, b, c){
 btn.addEventListener("click", function(){
 
     grid.innerHTML = "";
-    if(grid.innerHTML === ""){
-        gridGenerator(1, 100, square10)
+    let difficulty = document.querySelector(".form-select").value;
+    if( difficulty == 1){
+        if(grid.innerHTML === ""){
+            gridGenerator(1, 100, square10)
+        } else {
+            grid.innerHTML = "";
+        }
+    } else if ( difficulty == 2){
+        if(grid.innerHTML === ""){
+            gridGenerator(1, 81, square9)
+        } else {
+            grid.innerHTML = "";
+        }
+    } else if ( difficulty == 3){
+        if(grid.innerHTML === ""){
+            gridGenerator(1, 49, square7)
+        } else {
+            grid.innerHTML = "";
+        }
     } else {
-        grid.innerHTML = "";
-        gridGenerator(1, 100, square10)
+        alert("Seleziona una difficoltà prima di continuare")
     }
 })

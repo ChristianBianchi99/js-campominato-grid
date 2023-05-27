@@ -4,11 +4,16 @@
     box-sizing: border-box;
 }
 
-.container 
 /* CONSOLE */
 .console {
+    margin: auto;
     margin-top: 50px;
     margin-bottom: 25px;
+    display: flex;
+    width: 630px;
+}
+select {
+    margin-right: 20px;
 }
 /* FINE CONSOLE */
 /* GRID */
@@ -20,11 +25,21 @@
     display: flex;
     flex-wrap: wrap;
 }
+.square-10, .square-9, .square-7 {
+    background-color: pink;
+    border: 2px solid palevioletred;
+}
 .square-10 {
     height: 63px;
     width: 63px;
-    background-color: pink;
-    border: 2px solid palevioletred;
+}
+.square-9 {
+    height: 70px;
+    width: 70px;
+}
+.square-7 {
+    height: 90px;
+    width: 90px;
 }
 .clicked {
     background-color: aqua;
