@@ -3,3 +3,30 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+.container 
+/* CONSOLE */
+.console {
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+/* FINE CONSOLE */
+/* GRID */
+.grid {
+    max-width: 630px;
+    max-height: 630px;
+    background-color: rebeccapurple;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.square-10 {
+    height: 63px;
+    width: 63px;
+    background-color: pink;
+    border: 2px solid palevioletred;
+}
+.clicked {
+    background-color: aqua;
+}
+/* FINE GRID */
